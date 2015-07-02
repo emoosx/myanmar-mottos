@@ -1,5 +1,9 @@
 @import '../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap';
 
+@font-face {
+  font-family: 'Myanmar Text';
+  src: url('../fonts/MyanmarText.ttf') format('truetype');
+}
 
 @mixin card($depth) {
   @if $depth < 1 {
@@ -39,12 +43,13 @@ $color-white: #fff;
     padding: 0;
     margin: 0;
     h1 {
+      font-family: 'Myanmar Text';
       border-radius: 5px;
       background-color: $color-black;
       text-align: center;
       line-height: 1.6;
-      padding: 0.25em;
-      margin: 0.15em;
+      padding: 15px 0.24rem 10px 0.24rem;
+      margin: 0.16rem;
     }
   }
 }
